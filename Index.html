@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 font-inter">
     <div class="min-h-screen p-6">
         <!-- Header -->
         <header class="flex justify-between items-center mb-8">
@@ -96,20 +96,28 @@
             <!-- Today's Tasks -->
             <div class="bg-white p-6 rounded-lg shadow-sm">
                 <h2 class="text-lg font-semibold mb-4">Today's Tasks</h2>
-                <ul class="space-y-3">
-                    <li class="flex items-center gap-3">
-                        <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                        <span>Complete project proposal</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
-                        <span>Review team updates</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-                        <span>Prepare for client meeting</span>
-                    </li>
-                </ul>
+                <div class="flex">
+                    
+                    <ul class="flex-1 space-y-3">
+                        <li class="flex items-center gap-3">
+                            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                            <span>Complete project proposal</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                            <span>Review team updates</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span>Prepare for client meeting</span>
+                        </li>
+                    </ul>
+                    <div class="w-16 flex flex-col space-y-3 text-sm text-gray-500">
+                        <div>High</div>
+                        <div>Normal</div>
+                        <div>Low</div>
+                    </div>
+                </div>
             </div>
 
             <!-- All Tasks -->
@@ -141,7 +149,37 @@
                                 </td>
                                 <td class="text-sm text-gray-500">9 months ago</td>
                             </tr>
-                            <!-- Add more rows as needed -->
+                            <tr class="border-t">
+                                <td class="py-3 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                                    Test task
+                                </td>
+                                <td><span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded text-sm">Normal</span></td>
+                                <td>
+                                    <div class="flex -space-x-2">
+                                        <div class="w-6 h-6 rounded-full bg-red-500 text-white text-xs flex items-center justify-center">A</div>
+                                        <div class="w-6 h-6 rounded-full bg-blue-500 text-white text-xs flex items-center justify-center">E</div>
+                                        <div class="w-6 h-6 rounded-full bg-green-500 text-white text-xs flex items-center justify-center">B</div>
+                                    </div>
+                                </td>
+                                <td class="text-sm text-gray-500">9 months ago</td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="py-3 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+                                    Test task
+                                </td>
+                                <td><span class="px-2 py-1 bg-red-100 text-red-800 rounded text-sm">High</span></td>
+                                <td>
+                                    <div class="flex -space-x-2">
+                                        <div class="w-6 h-6 rounded-full bg-blue-500 text-white text-xs flex items-center justify-center">C</div>
+                                        <div class="w-6 h-6 rounded-full bg-yellow-500 text-white text-xs flex items-center justify-center">J</div>
+                                        <div class="w-6 h-6 rounded-full bg-red-500 text-white text-xs flex items-center justify-center">A</div>
+                                        <div class="w-6 h-6 rounded-full bg-green-500 text-white text-xs flex items-center justify-center">B</div>
+                                    </div>
+                                </td>
+                                <td class="text-sm text-gray-500">10 months ago</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -150,3 +188,4 @@
     </div>
 </body>
 </html>
+
